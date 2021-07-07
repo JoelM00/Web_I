@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        alert("Bom dia!");
+        alert("Vamos estudar JS");
+        
+        var a = prompt("Digite o seu nome:","Ana");
+        var b = prompt("Digite o seu sobrenome: ","Martins");
+        
+        document.write("Bom dia, " + a + " " + b + "<br/>");
+        
+        var res = confirm("Tudo ok?");
+        var mensagem;
+
+        if (res == true) {
+            mensagem = "Confirmado!" 
+        } else {
+            mensagem = "Nao confirmado!";
+        }
+
+        document.write(mensagem + "<br/>");
+
+        var nome = prompt("Diga o seu nome: ", "Nome");
+        document.write("bom dia, " + nome + " <br/>");
+        document.write("<p>Vamos estudar <strong> JAVASCRIPT </strong></p>")
+
+    </script>
+</body>
+</html>
