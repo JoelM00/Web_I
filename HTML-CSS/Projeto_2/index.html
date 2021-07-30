@@ -11,18 +11,530 @@
     <!-- google icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
     <!-- Materialize css -->
     <link rel="stylesheet" href="./css/materialize.css">
+
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/custom.css">
 
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <!--Menu mobile-->
+        <ul id="slide-nav" class="sidenav">
+            <li><a class="sidenav-close" href="#home">Home</a></li>
+            <li><a class="sidenav-close" href="#sobre">Sobre o Boa Forma</a></li>
+            <li><a class="sidenav-close" href="#servicos">Servicos</a></li>
+            <li><a class="sidenav-close" href="#unidades">Unidades</a></li>
+            <li><a class="sidenav-close" href="#contactos">Contacto</a></li>
+        </ul>
 
-    <div class="card red">
-        ola mundo!
+
+        <div class="navbar-fixed">
+        <nav class="navbar z-depth-0">
+            <div class="nav-wrapper container">
+                <h1 class="logo_text">Centro Boa Forma</h1>
+                <a href=""><img class="logo_img" src="img/logo.png" alt="Centro boa forma"></a>
+            
+                <ul class="right light hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre o Boa Forma</a></li>
+                    <li><a href="#servicos">Servicos</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
+                    <li><a href="#contactos">Contacto</a></li>
+                </ul>
+
+                <a href="#" data-target="slide-nav" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home bloco scrollspy" id="home">
+        <div class="row container banner">
+            <div class="col s12 center">
+                <h2 class="white-text">O melhor treino funcional da regiao</h2>
+                <p class="white-text light">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quasi atque maiores laudantium commodi asperiores magnam inventore suscipit fugit cum enim, iste animi! Sapiente id at dolorum ipsum et quidem?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vitae odio laborum possimus praesentium quis pariatur unde deleniti eum perferendis exercitationem architecto maiores dolores recusandae temporibus cupiditate soluta, corrupti ad.
+                </p>
+                <div class="row">
+                    <a href="#sobre" class="btn btn-large blue-logo">About us</a>
+                    <a href="#contacto" class="btn btn-large white black-text">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre bloco scrollspy" id="sobre">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light titulo">About us</h2>
+            </div>
+            <div class="col s12 l6">
+                <p class="light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque delectus nobis nesciunt incidunt impedit harum eos exercitationem expedita quos. Quae aliquid voluptatum atque odio culpa architecto ex earum aperiam nesciunt?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam culpa fuga, nesciunt suscipit veniam libero ipsum error quas omnis, impedit autem. Labore ab numquam nihil cumque, quis sit aperiam eaque.
+                </p>
+            </div>
+            <div class="col s12 l6">
+                <div class="carousel carousel-slider" data-indicators="true">
+                    <a href="#" class="carousel-item"><img src="img/banner-01.jpg" alt="Imagem institucional"></a>
+                    <a href="#" class="carousel-item"><img src="img/banner-02.jpg" alt="Imagem institucional"></a>
+                    <a href="#" class="carousel-item"><img src="img/banner-03.jpg" alt="Imagem institucional"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row blue-logo missao-visao-valores">
+            <div class="container">
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">directions_run</i></span>
+                    <h3 class="light">Missao</h3>
+                    <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde eligendi non. Porro, sunt suscipit quibusdam aliquid optio debitis architecto maxime, facere beatae tenetur voluptas commodi magni corporis culpa molestias?</p>
+                </article>
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">visibility</i></span>
+                    <h3 class="light">Visao</h3>
+                    <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde eligendi non. Porro, sunt suscipit quibusdam aliquid optio debitis architecto maxime, facere beatae tenetur voluptas commodi magni corporis culpa molestias?</p>
+                </article>
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">grade</i></span>
+                    <h3 class="light">Valores</h3>
+                    <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde eligendi non. Porro, sunt suscipit quibusdam aliquid optio debitis architecto maxime, facere beatae tenetur voluptas commodi magni corporis culpa molestias?</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--Servicos-->
+    <section class="servicos bloco scrollspy" id="servicos">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light titulo white-text">Servicos</h2>
+                <p class="light paragrafo white-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ex, sed odit quas nam recusandae veritatis qui fugit facere assumenda vitae? Delectus perferendis excepturi illo, sed ut earum aspernatur quis.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, animi rerum. Fugiat officia deleniti ex eveniet? Animi itaque ullam quaerat magni saepe pariatur ea omnis voluptatibus! Voluptate recusandae neque esse?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium officiis nobis quisquam deserunt? Maxime, dicta repellat unde aspernatur architecto ullam facere dolores, id odit quidem veniam illo, earum sed sequi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim incidunt, sint reiciendis adipisci optio culpa facilis consectetur nisi? Nemo libero voluptatibus quis optio et voluptate ratione perferendis ipsa corrupti!
+                </p>
+            </div>
+        </div>
+        <div class="row container">
+
+            <!--Pilates-->
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/pilates.jpg" alt="pilates" class="materialboxed">
+                        <a href="#pilates-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                            <i class="material-icons">more_horiz</i>
+                        </a> 
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pilates</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, provident. Eaque autem, inventore quaerat, itaque dolorem veritatis omnis quis sunt odit, aliquid possimus velit? Placeat explicabo reprehenderit libero quis aliquid.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!--nutricao-->
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/nutricao.jpg" alt="nutricao" class="materialboxed">
+                        <a href="#nutricao-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                            <i class="material-icons">more_horiz</i>
+                        </a> 
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Nutricao</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, provident. Eaque autem, inventore quaerat, itaque dolorem veritatis omnis quis sunt odit, aliquid possimus velit? Placeat explicabo reprehenderit libero quis aliquid.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!--Fisioterapia-->
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/fisioterapia.jpg" alt="fisioterapia" class="materialboxed">
+                        <a href="#fisioterapia-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                            <i class="material-icons">more_horiz</i>
+                        </a> 
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fisioterapia</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, provident. Eaque autem, inventore quaerat, itaque dolorem veritatis omnis quis sunt odit, aliquid possimus velit? Placeat explicabo reprehenderit libero quis aliquid.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!--Funcional-->
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/funcional.jpg" alt="funcional" class="materialboxed">
+                        <a href="#funcional-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                            <i class="material-icons">more_horiz</i>
+                        </a> 
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Funcional</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, provident. Eaque autem, inventore quaerat, itaque dolorem veritatis omnis quis sunt odit, aliquid possimus velit? Placeat explicabo reprehenderit libero quis aliquid.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!--Botao quadro de horarios-->
+            <div class="row center btn-horario">
+                <a href="#horarios-modal" class="btn btn-large blue-logo modal-trigger"><i class="material-icons right">timer</i>Quadro de horarios</a>
+            </div>
+
+            <!--Modal quadro de horarios-->
+            <div class="modal" id="horarios-modal">
+                <div class="modal-content">
+                    <h5 class="light">Quadro de horarios</h5>
+                    <ul class="tabs">
+                        <li class="tab col s3"><a href="#tabela-pilates">Pilates</a></li>
+                        <li class="tab col s3"><a href="#tabela-musculacao">Musculacao</a></li>
+                        <li class="tab col s3"><a href="#tabela-fitness">Fitness</a></li>
+                        <li class="tab col s3"><a href="#tabela-artes-marciais">Artes Marciais</a></li>
+                    </ul>
+
+                    <!--Tabela pilates-->
+                    <table class="striped responsive-table" id="tabela-pilates">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Segunda</th>
+                                <th>Terca</th>
+                                <th>Quarta</th>
+                                <th>Quinta</th>
+                                <th>Sexta</th>
+                                <th>Sabado</th>
+                                <th>Domingo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Das 6:00 as 10:00</td>
+                                <td>Pilates</td>
+                                <td></td>
+                                <td>Pilates</td>
+                                <td></td>
+                                <td>Pilates</td>
+                                <td>Pilates</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Das 12:00 as 22:00</td>
+                                <td></td>
+                                <td>Pilates</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Pilates</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn modal-action modal-close blue-logo">Sair</a>
+                </div>
+            </div>
+
+            <!--Modal Pilates-->
+            <div class="modal" id="pilates-modal">
+                <div class="modal-content">
+                    <h5 class="light">O que e pilates?</h5>
+                    <p class="black-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laudantium doloribus quis quos quia, ipsam aspernatur ad adipisci vitae consequuntur asperiores officiis sequi omnis aliquid, sit non ut tempora voluptate.
+                    </p>
+                    <h5 class="light">Quais os beneficios do pilates?</h5>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum recusandae, accusamus molestias ut repellendus aliquid, quisquam fuga consequatur facere itaque. Eveniet excepturi quasi, dolores reiciendis nam nostrum dignissimos maiores?
+                        </li>
+                        <li class="collection-item">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum recusandae, accusamus molestias ut repellendus aliquid, quisquam fuga consequatur facere itaque. Eveniet excepturi quasi, dolores reiciendis nam nostrum dignissimos maiores?
+                        </li>
+                        <li class="collection-item">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum recusandae, accusamus molestias ut repellendus aliquid, quisquam fuga consequatur facere itaque. Eveniet excepturi quasi, dolores reiciendis nam nostrum dignissimos maiores?
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn blue-logo modal-action modal-close">Sair</a>
+                </div>
+            </div>
+
+            <!--Modal Nutricao-->
+            <div class="modal" id="nutricao-modal">
+                <div class="modal-content">
+                    <h5 class="light">Qual a importantica da nutricao</h5>
+                    <p class="light black-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus, minus earum voluptate sed, aspernatur nisi sint veniam reiciendis voluptatem iusto fugit sapiente dolor in reprehenderit? Quasi voluptas incidunt odit?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn blue-logo modal-action modal-close">Sair</a>
+                </div>
+            </div>
+
+            <!--Modal Fisioterapia-->
+            <div class="modal" id="fisioterapia-modal">
+                <div class="modal-content">
+                    <h5 class="light">Qual a importancia da fisioterapia?</h5>
+                    <p class="light black-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque optio aliquam qui. Magni in maxime natus inventore ea impedit, voluptate saepe vitae laboriosam dolorem repellat, iusto tempora magnam laudantium?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn blue-logo modal-action modal-close">Sair</a>
+                </div>
+            </div>
+
+            <!--Modal funcional-->
+            <div class="modal" id="funcional-modal">
+                <div class="modal-content">
+                    <h5 class="light">Qual a importancia do ex funcional?</h5>
+                    <p class="light black-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque optio aliquam qui. Magni in maxime natus inventore ea impedit, voluptate saepe vitae laboriosam dolorem repellat, iusto tempora magnam laudantium?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn blue-logo modal-action modal-close">Sair</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Unidades-->
+    <section class="unidades bloco scrollspy" id="unidades">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light titulo white-text">Unidades</h2>
+                <p class="light paragrafo white-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ex, sed odit quas nam recusandae veritatis qui fugit facere assumenda vitae? Delectus perferendis excepturi illo, sed ut earum aspernatur quis.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, animi rerum. Fugiat officia deleniti ex eveniet? Animi itaque ullam quaerat magni saepe pariatur ea omnis voluptatibus! Voluptate recusandae neque esse?
+                </p>
+            </div>
+        </div>
+        <div class="row container">
+            <!--Belo Horizonte-->
+            <article class="col s12 l6">
+                <div class="card horizontal">
+                    <div class="card-image card-image-horizontal">
+                        <img src="img/bh.jpg" alt="Belo Horizonte">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h3 class="card-title light">Belo Horizonte</h3>
+                            <p class="light black-text">
+                                <i class="material-icons left">phone</i> 123 123 123<br>
+                                <i class="material-icons left">email</i> bg@gmail.com<br>
+                                <i class="material-icons left">location_on</i> Av. Central<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+             <!--Salvador-->
+            <article class="col s12 l6">
+                <div class="card horizontal">
+                    <div class="card-image card-image-horizontal">
+                        <img src="img/salvador.jpg" alt="salvador">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h3 class="card-title light">Salvador</h3>
+                            <p class="light black-text">
+                                <i class="material-icons left">phone</i> 123 123 123<br>
+                                <i class="material-icons left">email</i> salvador@gmail.com<br>
+                                <i class="material-icons left">location_on</i> Av. 123 Fav<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--Sao Paulo-->
+            <article class="col s12 l6">
+                <div class="card horizontal">
+                    <div class="card-image card-image-horizontal">
+                        <img src="img/sp.jpg" alt="Sao Paulo">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h3 class="card-title light">Sao Paulo</h3>
+                            <p class="light black-text">
+                                <i class="material-icons left">phone</i> 123 123 123<br>
+                                <i class="material-icons left">email</i> SaoPaulo@gmail.com<br>
+                                <i class="material-icons left">location_on</i> Av. 123 Sao Paulo<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--Rio de Janeiro-->
+            <article class="col s12 l6">
+                <div class="card horizontal">
+                    <div class="card-image card-image-horizontal">
+                        <img src="img/rj.jpg" alt="Rio de janeiro">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h3 class="card-title light">Rio de Janeiro</h3>
+                            <p class="light black-text">
+                                <i class="material-icons left">phone</i> 123 123 123<br>
+                                <i class="material-icons left">email</i> Rio_Janeiro@gmail.com<br>
+                                <i class="material-icons left">location_on</i> Av. 123 Rio de Janeiro<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!--Contacto-->
+    <section class="contacto bloco scrollspy" id="contactos">
+        <div class="row container">
+            <dic class="col s12 center">
+                <h2 class="titulo light black-text">Contactos</h2>
+            </div>
+            <div class="col s12 m6 l4 hide-on-med-only">
+                <div class="mapa transparent">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23858.841876544473!2d-8.805179105834952!3d41.62645240151284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x730bff86c3a5bba4!2sBar%20Submarino!5e0!3m2!1spt-PT!2spt!4v1627025294102!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="informacoes white-text">
+                    <h4>Redes Sociais</h4>
+                    <p class="light">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt totam libero accusantium ab ullam perspiciatis velit, aliquam modi nostrum pariatur dolorum repellat fugiat, earum sapiente laboriosam impedit maxime qui ratione.
+                    </p>
+                    <a href="#" class="btn-floating blue-logo"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="btn-floating blue-logo"><i class="fa fa-google"></i></a>
+                    <a href="#" class="btn-floating blue-logo"><i class="fa fa-twitter"></i></a>
+
+                    <h4>Endereco</h4>
+                    <p class="light">Rua paraiso, 123 Centro, Baia</p>
+
+                    <h4>Contactos</h4>
+                    <p class="light">
+                        234 345 345<br>
+                        234 345 345<br>
+                        234 345 345<br>
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="formulario white black-text">
+                    <h4>Fale Connosco</h4>
+                    <p class="light">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore magnam deserunt, eaque non hic nemo? Dolorem, sapiente. Vel, vitae, nostrum veniam a quaerat ratione numquam voluptate asperiores et sed qui!
+                    </p>
+                    <form action="" method="post">
+                        <div class="input-field">
+                            <input type="text" name="name" id="name">
+                            <label for="name">Seu nome</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email">
+                            <label for="email">Seu email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="subject" id="subject">
+                            <label for="subject">Assunto</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="mensagem" class="materialize-textarea"></textarea>
+                            <label for="mensagem">Mensagem</label>
+                        </div>
+                        <button class="btn blue-logo" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Depoimentos-->
+    <div class="depoimentos blue-logo">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="titulo white-text light">Depoimentos</h2>
+            </div>
+            <div class="col s12 m4 center">
+                <img src="img/depo1.jpg" class="circle responsive-img" alt="depoimento 1">
+                <p class="light white-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero hic, assumenda laborum accusantium dolores corporis deserunt, sapiente officia maxime, sequi consequatur! Sunt eligendi magni, cumque delectus aliquid fugiat itaque?
+                </p>
+                <h4 class="light white-text">Filipe Sousa</h4>
+                <p class="white-text">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </p>
+            </div>
+            <div class="col s12 m4 center">
+                <img src="img/depo2.jpg" class="circle responsive-img" alt="depoimento 2">
+                <p class="light white-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero hic, assumenda laborum accusantium dolores corporis deserunt, sapiente officia maxime, sequi consequatur! Sunt eligendi magni, cumque delectus aliquid fugiat itaque?
+                </p>
+                <h4 class="light white-text">Bruno Valera</h4>
+                <p class="white-text">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </p>
+            </div>
+            <div class="col s12 m4 center">
+                <img src="img/depo3.jpg" class="circle responsive-img" alt="depoimento 3">
+                <p class="light white-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero hic, assumenda laborum accusantium dolores corporis deserunt, sapiente officia maxime, sequi consequatur! Sunt eligendi magni, cumque delectus aliquid fugiat itaque?
+                </p>
+                <h4 class="light white-text">Joana Sousa</h4>
+                <p class="white-text">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </p>
+            </div>
+        </div>
     </div>
 
+    <!--RodaPe-->
+    <footer class="rodape">
+        <div class="row container center">
+            <img src="img/logo.png" class="logo_img">
+            <p class="light white-text">
+                Todos os Direitos Estao Reservados!!!!
+            </p>
+        </div>
+    </footer>
 
     <!-- Jquery -->
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -30,7 +542,43 @@
     <!-- Materialize js -->
     <script src="js/materialize.js"></script>
 
+    <!--JavaScript-->
+    <script>
+        //Inicializacao
+        $(document).ready(function(){
+            //Menu mobile
+            $('.sidenav').sidenav();
+            //Link interno
+            $(".scrollspy").scrollSpy({
+                scrollOffset: 0
+            });
+            // Carousel
+            $(".carousel.carousel-slider").carousel({
+                fullWith: true
+            });
+            // Modal
+            $(".modal").modal();
+            //Tabs
+            $("ul.tabs").tabs();
+            //AutoPlay
+            function autoplay() {
+                $(".carousel").carousel("next");
+                setTimeout(autoplay,2500);
+            }
+            autoplay();
+        });
 
+        //Adicionando navcolor
+        $(window).on("scroll",function(){
+            if ($(window).scrollTop() > 100) {
+                $(".navbar").addClass("nav-color");
+            } else {
+                $(".navbar").removeClass("nav-color");
+            }
+        });
+
+
+    </script>
 
 
 </body>
