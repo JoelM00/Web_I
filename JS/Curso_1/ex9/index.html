@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function quadrado(numero) {
+            if (isNaN(numero)) {
+                return "Valor inserido nao e numero!";
+            }
+            quad = numero * numero;
+            return quad;
+        }
+
+        var num = prompt("Diga um numero: ");
+        document.write("O quadrado de "+num+" e: "+quadrado(num));
+
+
+    </script>
+
+
+    
+</body>
+</html>

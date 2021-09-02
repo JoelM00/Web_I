@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,th,td {border: 1px solid #000;}
+        th, td {padding: 7px;}
+        .nome {background-color: red;}
+        .email {background-color: green;}
+        .telefone {background-color: blue;}
+        .cargo {background-color: purple;}
+    </style>
+
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <caption> Cadastro de clientes</caption>
+
+        <colgroup>
+            <col class="nome">
+            <col class="email">
+            <col class="telefone">
+            <col class="cargo">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>Email:</th>
+                <th>Telefone:</th>
+                <th>Cargo:</th>
+                <th>Nada:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Joel</td>
+                <td>jsmartins</td>
+                <td>9342354</td>
+                <td rowspan="2">Dev Web</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>mariaMart</td>
+                <td>9342354</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total: 2</td>
+            </tr>
+        </tfoot>
+    
+    </table>
+</body>
+</html>

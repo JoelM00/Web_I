@@ -1,0 +1,6 @@
+#exemplo {border-bottom: solid 10px aqua; outline: dotted 5px red;}
+
+/*#transition {width: 200px; height: 200px; background-color: red; transition-property: width; transition-duration: 2s; transition-timing-function: linear; transition-delay: 2s;}*/
+#transition {width: 200px; height: 200px; background-color: red; transition: all 2s linear;}
+
+#transition:hover {width: 350px; height: 350px; background-color: black;}

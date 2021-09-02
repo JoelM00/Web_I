@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodePro - Especializada em solucoes digitais</title>
+    <meta name="description" content="site de propaganda">
+    <meta name="keywords" content="agencia digital, marketing">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Joel Martins">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="./img/icon.png">
+
+</head>
+<body>
+    <!--Cabecalho -->
+    <header class="cabecalho container">
+        <!--link para esta pagina com um nome associado a class logo-->
+        <a href="index.html">
+            <h1 class="logo">NodePro - Especializada em solucoes digitais</h1>
+        </a>
+        <!--botao com com icon dos importados do google-->
+        <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <!--menu de navegacao-->
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner container">
+        <div class="title">
+            <h2>Inovation incomming!</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam, eaque, molestiae nulla facere eveniet quasi ex officia a ratione aspernatur corrupti saepe minima? Rem necessitatibus blanditiis dignissimos nostrum voluptas.</h3>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-cadastrar bg-white radius">Cadastrar<i class="fa fa-arrow-circle-right"></i></button>
+            <button class="btn btn-sobre bg-black radius">Sobre<i class="fa fa-question-circle"></i></button>
+        </div>
+    </div>
+    <main class="servicos container">
+        <article class="servico bg-white radius">
+            <a href="#"><img src="./img/criacoes.jpg" alt="Campanhas de publicidade"></a>
+            <div class="inner">
+                <a href="#">Campanhas publicitarias</a>
+                <h4>Impressos, VTs, Jingles</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id aspernatur soluta repellendus laudantium sequi aliquid cumque numquam distinctio. Tempora pariatur eveniet corporis soluta accusantium? Provident possimus dicta beatae praesentium odio.</p>
+            </div>
+        </article>
+        <article class="servico  bg-white radius">
+            <a href="#"><img src="./img/md.jpg" alt="Markting digital"></a>
+            <div class="inner">
+                <a href="#">Markting digital</a>
+                <h4>Administracao de redes sociais</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id aspernatur soluta repellendus laudantium sequi aliquid cumque numquam distinctio. Tempora pariatur eveniet corporis soluta accusantium? Provident possimus dicta beatae praesentium odio.</p>
+            </div>
+        </article>
+        <article class="servico bg-white radius">
+            <a href="#"><img src="./img/cs.jpg" alt="Criacao de sites"></a>
+            <div class="inner">
+                <a href="#">Criacao de sites</a>
+                <h4>Sites administraveis</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id aspernatur soluta repellendus laudantium sequi aliquid cumque numquam distinctio. Tempora pariatur eveniet corporis soluta accusantium? Provident possimus dicta beatae praesentium odio.</p>
+            </div>
+        </article>
+    </main>
+    <section class="newsletter container ">
+        <h2>Subscribe now!</h2>
+        <h3>Receive news and much more!</h3>
+        <form>
+            <input class="bg-black radius" type="email" name="email" placeholder="Escreva o seu email">
+            <button class="bg-white radius"> Cadastrar </button>
+        </form>
+    </section>
+    <footer class="rodape container bg-gradient">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright © - All rights reserved.
+        </p>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(".btn-menu").click(function() {
+            $(".menu").show();
+        });
+        $(".btn-close").click(function() {
+            $(".menu").hide();
+        });
+    </script>
+</body>
+</html>
