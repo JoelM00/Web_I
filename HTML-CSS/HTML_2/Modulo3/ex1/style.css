@@ -1,0 +1,14 @@
+
+h1,h2,p {color: red; text-align: center;}
+
+
+/*
+* {margin: 0; padding: 0; color: red;}
+
+h1 {color: green; font-size: 40px;}
+p {color: blue; font-size: 20px;}
+
+input[type="text"] {width: 200px;background-color: lightblue; height: 40px; border: none;}
+input[name="email"] {width: 200px;background-color: lightgreen; height: 40px; border: none;}
+input[type="submit"] {width: 200px;background-color: lightcoral; height: 40px; border: none; cursor: pointer;}
+*/

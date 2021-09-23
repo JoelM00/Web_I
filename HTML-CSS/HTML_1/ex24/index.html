@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><strong>Elemento Datalist</strong></p>
+
+    <form action="script.php" method="GET" name="formulario">
+        <label for="bebida">Diga a sua bebida: </label>
+        <input type="text" id="bebida" name="bebida" list="bebidas">
+       
+        <datalist id="bebidas">
+            <option value="CocaCola"></option>
+            <option value="Sprite"></option>
+            <option value="Fanta"></option>
+            <option value="Compal"></option>
+        </datalist>
+        <br>
+
+        <button type="submit" name="envio" value="Enviar">Pedir bebida</button>
+
+    </form>
+</body>
+</html>

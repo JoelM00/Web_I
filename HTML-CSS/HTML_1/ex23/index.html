@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .estilo {
+            background-color: gray;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <p><strong>Alguns tipos de butoes</strong></p>
+
+    <form action="script.php" method="GET" name="formulario">
+        <label for="nome">Insira o seu nome:
+            <input type="text" name="nome" id="nome">
+        </label>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+        <br>
+        <button type="button" onclick="alert('Bom Dia!')" class="estilo">Executar JavaScript</button>
+        <br>
+        <input type="image" id="imagem" alt="Botao grafico" src="botao.jpg" height="100" width="100">
+        <br>
+    </form>
+
+
+</body>
+</html>

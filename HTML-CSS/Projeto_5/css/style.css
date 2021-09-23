@@ -1,0 +1,459 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    background: #f3f6fb;
+}
+
+#apresentacao {
+    background: url("../img/background-apresentacao.png") center 0 no-repeat;
+    min-height: 880px;
+}
+
+.center {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.menu {
+    padding-top: 30px;
+    margin-right: 50px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+ 
+.menu-link {
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    color: #ffffff;
+}
+
+.menu-link:hover {
+    color: black;
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.main-title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 75px;
+    line-height: 78px;
+    color: #fff;
+    margin: 70px 0px 50px 0px;
+}
+
+.secondary-title {
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+    color: #ff6752;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.button-big {
+    background-color: lightseagreen;
+    color: white;
+    padding: 27px 40px;
+    border-radius: 100px;
+    box-shadow: 10px 10px 27px -6px rgba(0,0,0,0.7);
+    display: inline-block;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-big:hover {
+    color: black;
+    background-color: white;
+}
+
+.box-schedule-service {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box-schedule-service .button-big {
+    margin-right: 50px;
+}
+
+.telephone {
+    color: white;
+    font-weight: 600;
+}
+
+.context {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.services {
+    background: url("../img/background-servicos.png") center 0 no-repeat;
+    min-height: 1251px;
+    padding-top: 270px;
+}
+
+.title-section {
+    font-family: 'Comfortaa', cursive;
+    color: #ff6752;
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.subtitle-section {
+    color: #808080;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.title-box {
+    text-align: center;
+}
+
+.services-cards {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 12px 38px 54px 2px rgba(0,0,0,0.18);
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    font-family: 'Comfortaa', cursive;
+    color: #707070;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.testemunhas {
+    padding-bottom: 100px;
+}
+
+.owl-carousel-testemunhas {
+    position: relative;
+    padding: 0 100px;
+    box-sizing: border-box;
+    margin-top: 150px;
+}
+
+.owl-carousel-testemunhas .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+}
+
+.owl-carousel-testemunhas.owl-carousel .owl-nav button {
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.owl-carousel-testemunhas.owl-carousel .owl-nav button.owl-next {
+    width: 82px;
+    height: 82px;
+    background: url('../img/seta-direita.png') no-repeat 0 0;
+    right: 0;
+}
+
+.owl-carousel-testemunhas.owl-carousel .owl-nav button.owl-prev {
+    width: 82px;
+    height: 82px;
+    background: url('../img/seta-esquerda.png') no-repeat 0 0;
+}
+
+.owl-carousel-testemunhas.owl-carousel .owl-nav button {
+    opacity: 0.7;
+}
+
+.owl-carousel-testemunhas.owl-carousel .owl-nav button:hover {
+    opacity: 1;
+}
+
+.owl-next span, .owl-prev span {
+    display: none;
+}
+
+.testemunha-box  {
+    box-shadow: 4px 4px 6px -2px rgba(12,68,235,0.75);
+    margin: 20px 15px;
+    border-radius: 20px;
+}
+
+.testemunha-box-laranja {
+    background: url('../img/bg-laranja.png') no-repeat 0 0;
+}
+
+.testemunha-box-azul {
+    background: url('../img/bg-azul.png') no-repeat 0 0;
+}
+
+
+.testemunha-box {
+    height: 280px;
+    background-size: cover;
+    border-radius: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.testemunha-imagem {
+    height: 73px;
+    width: 73px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.testemunha-nome {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    margin: 20px 0 25px 0;
+}
+
+.testemunha-texto {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.how-it-works-box {
+    display: flex;
+    align-items: center;
+}
+
+.how-it-works-content{
+    padding-left: 50px;
+}
+
+.how-it-works-text {
+    font-size: 20px;
+    line-height: 26px;
+    color: #808080;
+}
+
+.how-it-works {
+    padding-bottom: 100px;
+}
+
+.background-amarelo {
+    background: url("../img/how-it-works-bg.png") center 0 no-repeat;
+}
+
+.make-fetch {
+    background: url('../img/make-fetch.png') no-repeat 0 0;
+    height: 393px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.make-fetch-imagem {
+    padding: 30px;
+}
+
+.make-fetch-box {
+    padding: 20px;
+}
+
+.make-fetch-title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    color: yellow;
+}
+
+.make-fetch-text {
+    font-size: 25px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.make-fetch-button {
+    color: #fe6845;
+    font-size: 16px;
+    background: #f8f8f8;
+    border-radius: 40px;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    box-shadow: 6px 6px 16px -2px rgba(0,0,0,0.75);
+}
+
+.make-fetch-button:hover {
+    background: #fe6845;
+    color: #fff;
+    box-shadow: 6px 6px 16px -2px rgba(0,0,0,0.75);
+}
+
+#as-seen-on {
+    padding-top: 150px;
+}
+
+.title-medium {
+    font-size: 18px;
+    font-weight: 600;
+    color: #808080;
+    text-align: center;
+}
+
+#as-seen-on-box {
+    margin: 100px 0 200px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#as-seen-on-box img {
+    margin: 0 50px;
+}
+
+#footer {
+    background: url("../img/footer-background.png") center 0 no-repeat;
+    min-height: 359px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.footer-link {
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+.footer-link:hover {
+    color: #000;
+}
+
+.footer-newsletter-title {
+    color: yellow;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    display: block;
+}
+
+.footer-newsletter-text {
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    display: block;
+    margin: 20px 0;
+}
+
+.footer-newsletter-form {
+    background: #fff;
+    border-radius: 80px;
+    height: 55px;
+    display: flex;
+}
+
+.footer-newsletter-input {
+    background: none;
+    border: none;
+    margin-left: 15px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.footer-newsletter-button {
+    background: url("../img/bt-enviar.png") no-repeat 0 0;
+    height: 63px;
+    width: 63px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-newsletter-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom-text {
+    font-size: 20px;
+    color: #fe6845;
+    font-weight: bold;
+}
+
+.footer-bottom-list {
+    display: flex;
+    padding-right: 100px;
+}
+
+.footer-bottom-item {
+    padding: 0 10px;
+}
+
+.footer-bottom-item:hover {
+    opacity: 0.7;
+}
+
+.icon {
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+}
+
+.icon-fb {
+    background: url("../img/icon-fb.png");
+}
+
+.icon-ig {
+    background: url("../img/icon-instagram.png");
+}
+
+.icon-tw {
+    background: url("../img/icon-twitter.png");
+}

@@ -1,0 +1,11 @@
+@media only screen and (min-width: 993px) {
+    .container {
+      width: 90%;
+    }   
+}
+
+
+.sidenav {
+    background-color: lightblue;
+}
+.sidenav li > a {color: #fff;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var LINHAS = prompt("Insira o numero de linhas: ");
+        var COLUNAS = prompt("Insira o numero de colunas: ");
+
+        var matriz = []
+  
+        for (i = 0; i<LINHAS; i++) {
+            matriz[i] = [];
+            for (j = 0; j<COLUNAS; j++) {
+                matriz[i][j] = prompt("Insira o valor a guardar: ");
+            }
+        }
+
+        var valores = '';
+        for (x = 0; x < LINHAS; x++) {
+            for (y = 0; y < COLUNAS; y++) {
+                if (y < COLUNAS - 1) {
+                    valores += matriz[x][y] + " \t\t";
+                } else {
+                    valores += matriz[x][y] + "\n";
+                }
+            }
+        } 
+
+        alert("Conteudo: \n" + valores);
+
+    </script>
+
+    
+</body>
+</html>

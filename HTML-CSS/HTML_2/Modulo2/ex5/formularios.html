@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="GET">
+
+        <fieldset>
+            <legend> Informacoes pessoais! </legend>
+            Nome: <input type="text" name="nome" required autofocus maxlength="5" ><br>
+            
+            Senha: <input type="password" name="senha" disabled><br>
+            
+            Email: <input type="email" name="email" autocomplete="on" placeholder="exemplo@pt.com"><br>
+            
+            Imagem: <input type="file" name="imagem"><br>
+            
+            Invisivel: <input type="hidden" name="id"><br>
+
+            Escolha um curso: 
+            <input name="cursos" list="lista-cursos">
+            <datalist id="lista-cursos">
+                <option value="HTML5">
+                <option value="CSS3">
+                <option value="JS">
+            </datalist><br>
+
+            URL: <input type="url" name="site"><br>
+
+            Search: <input type="search" name="pesquisa"><br>
+
+            Telefone: <input type="tel" name="telefone"><br> 
+            
+            Data: <input type="date" name="data" min="2000-12-31" max="2021-07-02"><br>
+
+            Hora: <input type="time" name="hora"><br>
+
+            Mes e ano: <input type="month" name="mes-ano"><br>
+
+            Semana: <input type="week" name="semana"><br>
+
+            Data e hora: <input type="datetime-local" name="data-hora"><br>
+
+            Mensagem: <textarea name="mensagem" rows="5" cols="30" spellcheck="off"></textarea><br>
+            
+            Botao: <button type="button">Clique-me</button><br>
+
+            Caixa de selecao: 
+            <select name="veiculo">
+                <optgroup label="Muscle"> 
+                    <option value="camaro">Camaro</option>
+                    <option value="mustang">Mustang</option>
+                </optgroup>
+                <optgroup label="Hyper">
+                    <option value="lamborghini" selected>Lamborghini</option>
+                    <option value="ferrari">Ferrari</option>
+                </optgroup>
+            </select><br>
+            
+            Time: <br>
+            <input type="radio" name="time" value="vasco" checked>Vasco<br>
+            <input type="radio" name="time" value="botafogo">Botafogo<br>
+            <input type="radio" name="time" value="agua">Agua<br>
+            
+            Cores: <br>
+            <input type="checkbox" name="cores" value="verda">Verda<br>
+            <input type="checkbox" name="cores" value="azul" checked>Azul<br>
+            <input type="checkbox" name="cores" value="vermelho">Vermelho<br>
+            
+            Quantidade: <br>
+            <input type="number" name="quantidade" min="0" max="500" step="10"><br>
+            <input type="range" name="quantidade"><br>
+            <input type="color" name="cor"><br>
+
+            <input type="submit" name="btn-enviar" value="Enviar"><br>
+        </fieldset>
+
+    </form>
+</body>
+</html>

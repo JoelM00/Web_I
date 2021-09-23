@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento confidencial</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 3px solid rgb(100, 130, 40);
+            width: 75%;
+        }
+        tbody {
+            font-size: 90%;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+        tfoot {
+            font-weight: bold;
+            font-size: 75%;
+        }
+        thead {
+            color: darkblue;
+        }
+        td {
+            text-align: center;
+            border: 1px solid rgb(100, 130, 40);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A minha tabela:</h1>
+    <table>
+        <caption>Agenda de refeicoes</caption>
+        <thead>
+            <tr> 
+                <th>Hamburger</th>
+                <th>Bebida</th>
+                <th>Extra</th>
+                <th colspan="2">Endereco</th>
+            </tr> 
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="5">Ementa do MacDonalds</td> <!-- Cria uma linha com 5 colunas -->
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Big Mac</td>
+                <td>CocaCola</td>
+                <td>Nuggets</td>
+                <td>Shopping de Viana do Castelo</td>
+                <td>Sim aquele da estacao, restauracao</td>
+            </tr>
+            <tr>
+                <td>Big Tasty</td>
+                <td>Sprite</td>
+                <td>Cheese burguer</td>
+                <td>Mac ao pe do axis hotel</td>
+                <td>Aquele ao pe da rotunda de 3 vias</td>
+            </tr>
+            <tr>
+                <td>Maiami</td>
+                <td>Fanta</td>
+                <td>Nuggets</td>
+                <td>algures ao pe do continente</td>
+                <td>la para os lados da meadela</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

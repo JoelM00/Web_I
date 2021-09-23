@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protips</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-news.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="apresentacao">
+        <div class="center">
+            <a href="index.html" class="logo">
+                <i class="logomarca"></i>
+            </a>
+            <div class="">
+                <a href="#" id="menu-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li class="menu-li"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-li"><a href="news.html" class="menu-link">News</a></li>
+                    <li class="menu-li"><a href="contact.html" class="menu-link">Contact</a></li>
+                </ul>
+            </nav>
+           
+            <div class="clear"></div>
+        </div>
+
+        <section class="section-top-margin">
+            <div class="center">
+                <header class="p-15">
+                    <h2 class="title align-left">Our Recent Post</h2>
+                    <h5 class="subtitle align-left">Vampires The Romantic Idealogy Behind Them</h5>
+                </header>
+                <div class="posts" id="posts">
+                    <!-- <div class="col col-3 mb-40 col-small-2 col-mobile-1">
+                        <div class="post-box">
+                            <div class="post-wrapper">
+                                <a href="news-detail.html" class="post-link">
+                                    <div class="post-imagem">
+                                        <img src="./img/post.png" class="img-responsive">
+                                    </div>
+                                    <div class="post-content">
+                                        <span class="post-title" id="titulo">Finally a top secrt way you can get</span>
+                                        <p class="post-subtitle">By <strong class="bold" id="autor">Milon Mahamud</strong> | 6 January 2002</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="clear"></div>
+                    -->
+                </div>
+            </div>
+            <div class="pagination" id="pagination"></div>
+        </section>
+
+        <section class="newsletter">
+            <div class="center">
+                <div class="newsletter-box">
+                    <div class="newsletter-wrapper">
+                        <div class="newsletter-content">
+                            <span class="newsletter-text">Get Update Protips Every <br>Newsletter</span>
+                            <form class="newsletter-form" action="index.html" method="POST">
+                                <div class="newsletter-box-input">
+                                    <div class="newsletter-input-box">
+                                        <input type="text" name="" value="" class="newsletter-input" placeholder="Enter your email">
+                                    </div>
+                                </div>
+                                <div class="newsletter-box-submit">
+                                    <input type="submit" name="button" class="newsletter-submit">
+                                </div>
+                            </form>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="center">
+                <nav class="footer-box">
+                    <i class="logomarca"></i>
+                    <p class="footer-descricao">Lorem ipsum dolor sit amet consectetur adipisicing eliatur molestias et! Error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sit, quae suscipit exp. <br> Perspiciatis enim ullam libero aliquid voluptates in recusandae tempora id.</p>
+                    
+                </nav>
+                <nav class="footer-links">
+                    <strong class="footer-title">Quick Links</strong>
+                    <ul>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">About Us</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Blog</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Contact</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-pages">
+                    <strong class="footer-title">Page</strong>
+                    <ul>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Disclaimer</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Financing</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Privacy Policy</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Terms of Service</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-legal">
+                    <strong class="footer-title">Legal Stuff</strong>
+                    <ul>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Disclaimer</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Financing</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Privacy Policy</a></li>
+                        <li class="footer-menu-item"><a class="footer-link" href="#">Terms of Service</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+            <div class="footer-autor">
+                <p>Design by <a href="#">Joel Martins</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/posts.js"></script>
+    <script src="./js/getUrlVars.js"></script>
+    <script>
+        // ------ Pagination ------
+        function pagination (page, total, limit) {
+            var pageSize = Math.ceil(total/limit);
+
+            var _pagination = {
+                page: page,
+                total: total,
+                limit: limit,
+                pages: pageSize
+            };
+
+            if (page > 1) {
+                var prev = page-1;
+                _pagination.prev = prev;
+            }
+
+            var ramaining = total - (page * limit);
+
+            if (ramaining > 0) {
+                _pagination.next = page+1;
+            }
+
+            return _pagination;
+        }
+
+        var array = posts;
+        var pageSelected = getUrlVars()["pagina"];
+        var page = parseInt(pageSelected) || 1;
+        var limit = 6;
+        var offset = (page - 1) * limit;
+        var total = array.length;
+        var itensToShow = array.slice(offset,offset+limit);
+
+
+        var paginationResult = pagination(page,total,limit);
+
+        // ----- 
+        var postsHTML = '';
+        for (var i = 0; i < itensToShow.length; i++) {
+            var post = itensToShow[i];
+            var html = '<div class="col col-3 mb-40 col-small-2 col-mobile-1">'+
+                            '<div class="post-box">'+
+                                '<div class="post-wrapper">'+
+                                    '<a href="news-detail.html?id='+(i+1)+'" class="post-link">'+
+                                        '<div class="post-imagem">'+
+                                            '<img src="'+post.imagem+'" class="img-responsive">'+
+                                        '</div>'+
+                                        '<div class="post-content">'+
+                                            '<span class="post-title" id="titulo">'+post.titulo+'</span>'+
+                                            '<p class="post-subtitle">By <strong class="bold" id="autor">'+post.autor+'</strong> | '+post.data+'</p>'+
+                                        '</div>'+
+                                    '</a>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>';
+            postsHTML += html;
+        }
+        postsHTML += '<div class="clear"></div>';
+
+        document.getElementById("posts").innerHTML = postsHTML;
+
+        if (pageSelected > paginationResult.pages) {
+            document.getElementById("posts").innerHTML = "Nenhum Item Encontrado";
+        }
+
+        // -------- Butoes
+        var paginationItens = '';
+        for (var i = 0; i < paginationResult.pages; i++) {
+            var paginaAtiva = (i+1);
+
+            var ativo = page === paginaAtiva ? 'active' : '';
+            paginationItens += '<a class="pagination-link '+ativo+'" href="news.html?pagina='+paginaAtiva+'">'+paginaAtiva+'</a>';
+        }
+
+        document.getElementById("pagination").innerHTML = paginationItens;
+    </script> 
+</body>
+</html>
